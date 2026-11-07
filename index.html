@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feruz — Jahongirning Do'sti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-darkBg text-slate-800 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-darkBg/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
+                Feruz & Jahongir
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#about" class="hover:text-primary transition">Do'stlik haqida</a>
+                <a href="#qualities" class="hover:text-primary transition">Xislatlar</a>
+                <a href="#memories" class="hover:text-primary transition">Xotiralar</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="w-10 h-10 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 hover:ring-2 ring-primary transition">
+                    <i class="fa-solid fa-moon dark:hidden text-slate-700"></i>
+                    <i class="fa-solid fa-sun hidden dark:block text-amber-400"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" class="space-y-6">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-500 font-semibold text-sm">
+                    Sadoqatli va Ishonchli Do'st 🤝
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-bold tracking-tight">
+                    Feruz — <span class="bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">Jahongirning</span> eng yaqin do'sti
+                </h1>
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                    Haqiqiy do'stlik vaqt va masofalar bilan o'lchanmaydi. Feruz har doim qo'llab-quvvatlaydigan, samimiy va ishonchli do'st sifatida ajralib turadi.
+                </p>
+            </div>
+            <div data-aos="fade-left" class="flex justify-center">
+                <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-500 to-indigo-500 rounded-3xl rotate-6 opacity-30 blur-2xl"></div>
+                    <div class="relative w-full h-full bg-slate-200 dark:bg-cardBg rounded-3xl border border-slate-300 dark:border-slate-700 overflow-hidden flex flex-col items-center justify-center p-6 text-center shadow-2xl">
+                        <i class="fa-solid fa-user-group text-7xl text-primary mb-4 opacity-90"></i>
+                        <h3 class="text-2xl font-bold">Ayrilmas Do'stlar</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Jahongir & Feruz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-slate-100 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Do'stlik Haqida</h2>
+                <p class="text-slate-600 dark:text-slate-400">Feruz va Jahongir o'rtasidagi samimiy munosabat va qadriyatlar</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white dark:bg-cardBg p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-primary flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Ishonch va Sadoqat</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Feruz har qanday vaziyatda so'zida turadigan va do'stini qo'llab-quvvatlaydigan inson.
+                    </p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-white dark:bg-cardBg p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-primary flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Samimiyat va Hazil-mutoyiba</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        U bilan o'tgan har bir daqiqa quvnoq va doimo ko'tarinki kayfiyatda o'tadi.
+                    </p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-white dark:bg-cardBg p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-primary flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Yordamga Tayyorlik</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Qiyin kunlarda doimo birinchi bo'lib yordam qo'lini uzatadigan qadrdon do'st.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Jahongir va Feruz Do'stligi. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
